@@ -15,7 +15,6 @@ export default function () {
         {/* <button onClick={() => {}}> ajouter au panier </button> */}
     </div>
 }
-
 function ProductsList() {
    
     let { data, isFetching } = useGetProductsQuery()
