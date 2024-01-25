@@ -3,11 +3,49 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+ 
 }
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;600&display=swap');
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.imgproduct{
+  max-width: 50%;
+  height: 120px;
+  border-radius: 10px;
+}
+h3 {
+  margin-top: 10px;
+  font-size: 24px;
+}
+.textproduct {
+  margin: 10px 0;
+  font-size: 16px;
+}
+.ProductCard{
+  background-color: #EE9BB5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    margin: 16px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.linksingleproduct{
+  display: block;
+  color: #CF9E76;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+
+  &:hover {
+      text-decoration: underline;
+  }
 }
