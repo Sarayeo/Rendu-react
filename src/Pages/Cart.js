@@ -64,7 +64,7 @@ const CartContainer = styled.div`
 `;
 
 const ProductContainer = styled.div`
-  background-color: rgba(148, 169, 187, 0.45);
+  background-color: #E74291;
   display: flex;
   flex-direction: column;
   justify-content: center;
