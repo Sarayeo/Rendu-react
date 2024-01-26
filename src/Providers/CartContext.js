@@ -10,12 +10,23 @@ export function CartProvider({ children }) {
         setCart([...cart, item])
         console.log(cart);
     }
-   
-    return (<CartContext.Provider value={{ cart, addToCart, removeCart, addComment }}>
+    const removeCart = (index) => {
+      setCart(['']);
+    };
+    const addComment = (item) => {
+        setComments([...comments, item]);
+    }
+    const getTotalPrice = () => {
+      return cart.reduce((total, product) => total + (product.price || 0), 0);
+    };
+  
+    return (
+      <CartContext.Provider value={{ cart, addToCart, removeCart, addComment, getTotalPrice }}>
         {children}
-    </CartContext.Provider>)
-}
-
-export function useCart() {
-    return useContext(CartContext)
-}
+      </CartContext.Provider>
+    );
+  }
+  
+  export function useCart() {
+    return useContext(CartContext);
+  }
