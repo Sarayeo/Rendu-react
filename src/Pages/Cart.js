@@ -115,7 +115,7 @@ export default function Cart() {
         ))}
       </CartContainer>
       <TotalPrice>Prix total du panier : {getTotalPrice()} €</TotalPrice>
-      <DeleteButton onClick={removeCart}>Supprimer la liste</DeleteButton>
+      <DeleteButton onClick={removeCart}>Supprimer les produits</DeleteButton>
       <Footer>
         <p>&copy;2024 Yeo Sara | All Rights Reserved</p>
       </Footer>
