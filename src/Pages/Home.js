@@ -114,10 +114,6 @@ function ProductsList({ products }) {
           </div>
           <div class="contentBx">
             <h2>{product.title}</h2>
-            <div class="size">
-              <h3>Quantity :</h3>
-              <span>{product.quantity}</span>
-            </div>
             <div class="color">
               <h3>Price :</h3>
               <span> {product.price} €</span>
